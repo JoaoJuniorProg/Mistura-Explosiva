@@ -969,10 +969,18 @@ h1.big-text {
   width: 1370px;
   transform: translateX(-100px);
   text-align: center;
+    padding: 100px 50px ;
+    display: flex; 
+    flex-direction: column;
+    gap: 50px; 
+
 }
 
 .blog-holder-scode article:nth-of-type(3n) {
   margin-right: 0;
+.title { 
+    
+
 }
 
 .blog-item-holder-scode {
@@ -991,6 +999,10 @@ h1.big-text {
 .blog-item-holder-scode h4 {
   padding: 0;
   margin: 35px 0;
+.post { 
+    display: flex; 
+    flex-direction: column;
+    gap: 20px;    
 }
 
 .blog-item-holder-scode h4 a {
@@ -1000,6 +1012,10 @@ h1.big-text {
   font-weight: 700;
   transition: 0.3s;
   letter-spacing: -1px;
+.container-noticias { 
+    display: flex; 
+    justify-content: space-around; 
+
 }
 
 .blog-item-holder-scode h4 a:hover {
@@ -1008,6 +1024,10 @@ h1.big-text {
 
 .blog-item-holder-scode .post-thumbnail {
   overflow: hidden;
+.card {
+  display: flex; 
+  gap: 50px; 
+    
 }
 
 .latest-posts-background-featured-image-holder {
@@ -1017,12 +1037,32 @@ h1.big-text {
   background-size: cover;
   background-position: center center;
   transition: 0.3s;
+.card img{ 
+    width: 100%; 
+    height: 100%;
+}
+
+.card-noticias { 
+    width: 400px;
+    background-color: #edebef;
+    padding: 15px;
+    border-radius: 25px;
+
 }
 
 .latest-posts-background-featured-image-holder:hover {
   opacity: 0.8;
   transform: scale(1.1);
+.card-noticias p{ 
+    margin: 0px; 
+    padding: 0px;
+    text-align: justify;
 }
+
+    
+
+
+
 
 /* ===================================
     8. Portfolio Section CSS
