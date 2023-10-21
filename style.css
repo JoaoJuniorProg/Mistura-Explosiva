@@ -119,7 +119,7 @@ body pre {
 
 .header-holder {
   z-index: 99 !important;
-  background-color: #060606;
+  background-color: #f7f5f9;
   width: 100% !important;
   top: 0;
   position: fixed;
@@ -207,7 +207,7 @@ body pre {
 
 .sm-clean li a.menu-item-link {
   cursor: pointer;
-  color: #ffffff;
+  color: #191b21;
 }
 
 .sm-clean a span.sub-arrow {
@@ -223,19 +223,27 @@ body pre {
 .sm-clean a:focus,
 .sm-clean a:active {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 700;
   transition: color 0.3s ease, background-color 0.3s ease;
   padding: 15px;
   letter-spacing: 0.5px;
-  color: #fff;
+  color: #191b21;
 }
 
 .sm-clean ul a,
 .sm-clean ul a:hover,
 .sm-clean ul a:focus,
 .sm-clean ul a:active {
-  font-size: 13px;
-  line-height: 15px;
+  color: #191b21;
+  font-family: AmsiPro-Black;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.02rem;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+
   padding: 10px;
   padding-top: 10px !important;
   padding-bottom: 10px !important;
@@ -252,7 +260,7 @@ body .sm-clean li.active a,
 body .sm-clean li.current-page-ancestor > a,
 body .sm-clean li.current_page_ancestor > a,
 body .sm-clean li.current_page_item > a {
-  color: #47ea4e;
+  color: #ed7949;
 }
 
 .sm-clean li {
