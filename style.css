@@ -11,7 +11,7 @@
 4. Services Section CSS
 5. Personagens Section CSS
 6. Clients Section CSS
-7. News Section CSS
+7. Campanha Section CSS
 8. Portfolio Section CSS
         8.1 Single Portfolio
 9. Pricing Section CSS
@@ -838,6 +838,7 @@ a.button-dot:hover:before {
     background-position: left bottom;
     background-repeat: no-repeat;
     background-size: auto;
+    text-align:justify;
 }
 
 .sobre-holder {
@@ -911,6 +912,7 @@ a.button-dot:hover:before {
     padding: 44px;
     width: 100%;
     text-align: left;
+    margin-top:-100px;
 }
 
 .amon-content .content-text {
@@ -1055,6 +1057,11 @@ a.button-dot:hover:before {
         display: block;
     }
 }
+/* ===================================
+    Background personagens
+====================================== */
+
+
 
 /* ===================================
     6. Regras Section CSS
@@ -1069,6 +1076,7 @@ a.button-dot:hover:before {
     background-size: auto;
     color: #fff;
     justify-content: center;
+    margin-top:-160px;
 }
 
 .rule-rules {
@@ -1121,7 +1129,7 @@ a.button-dot:hover:before {
 }
 
 
-.expand-button .icon-svg-arrow {
+.expand-button  {
     margin-right: 10px;
 }
 
@@ -1189,10 +1197,10 @@ a.button-dot:hover:before {
 
 
 /* ===================================
-    7. News Section CSS
+    7. Campanha Section CSS
 ====================================== */
 
-#news {
+#campanha {
     background-image: linear-gradient(to bottom, #392666, #572C83, #392666);
     padding: 100px 20px; /* Reduzi o preenchimento nas laterais para telas menores */
     display: flex;
@@ -1200,7 +1208,7 @@ a.button-dot:hover:before {
     gap: 20px; /* Reduzi o espaçamento entre os elementos */
 }
 
-.news-title {
+.camapanha-title {
     text-align: center; 
     color: #FFF;
     top: -50px;
@@ -1297,7 +1305,7 @@ a.button-dot:hover:before {
 }
 
 @media (max-width: 480px) {
-    #news {
+    #campanha {
         padding: 50px 10px; 
     }
 }
@@ -1313,13 +1321,16 @@ a.button-dot:hover:before {
     height: auto;
     /* background: linear-gradient(99deg, #ED7949 48.58%, #572C83 97.82%, #DA3514 113.01%), #1D1534; */
     background-image: linear-gradient(to bottom, #392666, #572C83, #392666);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
 
     /* background-image: url("/images/img/background-namidia.svg"); */
 }
 
+
 .content-title-midia {
-    width: 80vw;
-    color: #FFFFFF;
+    max-width: 80%;
     margin: 0 auto;
     font-size: 1.2rem;
     /* display: block; */
@@ -1334,10 +1345,32 @@ a.button-dot:hover:before {
 }
 
 .expandable-section {
-    max-width: 600px; 
-    margin: 0 auto; 
+    max-width: 600px;
+    margin: 0 auto;
     text-align: left;
     padding: 8px;
+    text-align: center;
+}
+
+.expandable-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.expandable-section a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    transition: border-color 0.25s, background-color 0.50s;
+}
+
+.expandable-section a:hover {
+    border-color: none;
+    background-color: #47ea4e;
+    color: #572C83; 
 }
 
 .title-namidia {
