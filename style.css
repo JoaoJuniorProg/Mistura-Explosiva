@@ -1310,6 +1310,26 @@ a.button-dot:hover:before {
     }
 }
 
+.avaliacao {
+    display: flex; 
+    justify-content: center; 
+}
+
+.avaliacao img {
+    border-radius: 10px;
+    margin: 5px; 
+    max-width: 100%; 
+    height: auto; 
+}
+
+@media (max-width: 768px) {
+    .avaliacao {
+        flex-direction: column; /* Empilha as imagens verticalmente em telas estreitas (mobile) */
+        align-items: center; /* Alinha as imagens ao centro verticalmente */
+    }
+}
+
+
 
 
 /* ===================================
