@@ -45,6 +45,7 @@
 ====================================== */
 
 body {
+
     font-family: 'Rubik', sans-serif;
     font-size: 18px;
     line-height: 35px;
@@ -123,7 +124,7 @@ body pre {
 
 .header-holder {
     z-index: 99 !important;
-    background-color: #060606;
+    background-color: #F7F5F9;
     width: 100% !important;
     top: 0;
     position: fixed;
@@ -151,8 +152,8 @@ body pre {
 }
 
 .header-logo img {
-    width: 88px;
-    height: 50px;
+    width: 8rempx;
+    height: 5rem;
 }
 
 .menu-holder {
@@ -231,7 +232,8 @@ body pre {
     transition: color .3s ease, background-color .3s ease;
     padding: 15px;
     letter-spacing: 0.5px;
-    color: #fff;
+    color: #191B21;
+
 }
 
 .sm-clean ul a,
@@ -253,10 +255,10 @@ body pre {
 body .sm-clean a:hover,
 body .main-menu.sm-clean .sub-menu li a:hover,
 body .sm-clean li.active a,
-body .sm-clean li.current-page-ancestor > a,
-body .sm-clean li.current_page_ancestor > a,
-body .sm-clean li.current_page_item > a {
-    color: #47ea4e;
+body .sm-clean li.current-page-ancestor>a,
+body .sm-clean li.current_page_ancestor>a,
+body .sm-clean li.current_page_item>a {
+    color: #EA5B2F;
 }
 
 .sm-clean li {
@@ -309,6 +311,7 @@ body .sm-clean li.current_page_item > a {
     .menu-holder {
         display: none;
     }
+
     .toggle-holder {
         display: block;
     }
@@ -785,7 +788,7 @@ a.button-dot:hover:before {
 
 #bg-video {
     /* position: absolute; */
-    top: 0;
+    top: 0px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -797,6 +800,7 @@ a.button-dot:hover:before {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    margin-top: -150px;
 }
 
 @media (max-width: 1080px) {
@@ -814,7 +818,8 @@ a.button-dot:hover:before {
 
 @media (max-width: 768px) {
     #home {
-        min-height: auto; /* Ajuste a altura mínima de acordo com suas necessidades */
+        min-height: auto;
+        /* Ajuste a altura mínima de acordo com suas necessidades */
         min-width: 100%;
     }
 
@@ -831,75 +836,57 @@ a.button-dot:hover:before {
     4. Sobre Section CSS
 ====================================== */
 
-#sobre {
-    background-image: url(images/on_black_left.png);
-    background-image: linear-gradient(to bottom, #392666, #572C83, #392666);
+.separator {
+    width: 100%;
+    height: 50px;
+    background-color: #EA5B2F;
+}
 
-    background-position: left bottom;
+#sobre {
+    background-image: url(./images//img/background-sobre.png);
+    /* background-image: linear-gradient(to bottom, #392666, #572C83, #392666); */
+    background-position: top;
     background-repeat: no-repeat;
     background-size: auto;
-    text-align:justify;
+    display: flex;
+    justify-content: center;
+
 }
 
-.sobre-holder {
-    margin: 10px 0;
+.about-content {
+    max-width: 1280px;
+    padding: 120px 0px;
 }
 
-.sobre-holder:after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-.sobre-img {
-    width: 100%;
-}
-
-.titulo-sobre {
-    margin-top: -100px;
-}
-
-.sobre-txt h4 {
-    font-size: 3rem;
+.about-title {
+    width: 48.34719rem;
     color: #EDEBEF;
-    font-weight: 700;
-    line-height: 54px;
-    padding: 12px;
-    margin-bottom: 20px;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3.375rem;
 
 }
 
-.sobre-txt-paragrafo {
-    color: #FFFFFF;
-    padding: 30px;
-    font-size: 2rem;
-    line-height: 3rem;
+.about-box {
+    width: 100%;
+    background-color: #F2F0F4;
+    border-radius: 1.5625rem;
+    padding: 50px;
+    color: #191B21;
 }
-
-.sobre-txt {
-    text-align: center;
-    word-wrap: break-word;
-
-}
-
 
 /* Personagens Section CSS */
 #personagens {
-    box-sizing: border-box;
-    background-image: linear-gradient(to bottom, #392666, #572C83, #392666);
-    /* background-image: url("/images/img/background-sobre.png"); */
-    background-position: right center;
-    background-repeat: no-repeat;
-    background-size: auto;
-    /* top: -50px; */
+    background: rgb(234, 91, 47);
+    background: radial-gradient(circle, rgba(234, 91, 47, 1) 0%, rgba(87, 44, 131, 1) 100%);
+    display: flex;
+    flex-direction: column;
 }
 
 #container {
-    display: flex;
-    margin: 0.5rem;
-    padding: 1rem;
-    justify-content: space-between;
-    align-items: center;
+    max-width: 1280px;
+    padding-bottom: 120px;
 }
 
 /* Estilos para a seção Dr. Amon */
@@ -909,10 +896,10 @@ a.button-dot:hover:before {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 44px;
+    /* padding: 44px; */
     width: 100%;
     text-align: left;
-    margin-top:-100px;
+    margin-top: -100px;
 }
 
 .amon-content .content-text {
@@ -926,14 +913,14 @@ a.button-dot:hover:before {
     text-align: left;
     margin-bottom: 10px;
     color: #fff;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 .amon-content .amon-paragrafo {
     /* text-align: justify; */
     position: relative;
     color: #fff;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     line-height: 1.5;
 }
 
@@ -948,7 +935,7 @@ a.button-dot:hover:before {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 35px;
+    /* padding: 35px; */
     color: #fff;
     width: 100%;
     text-align: right;
@@ -965,9 +952,9 @@ a.button-dot:hover:before {
 
 .hebe-content .title {
     text-align: left;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     color: #fff;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 .hebe-content .hebe-paragrafo {
@@ -975,7 +962,7 @@ a.button-dot:hover:before {
     text-align: start;
     position: relative;
     color: #fff;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     line-height: 1.5;
     width: 100%;
 
@@ -995,24 +982,24 @@ a.button-dot:hover:before {
 
 @media (max-width: 768px) {
     .sobre-holder {
-        margin: 20px 0; 
+        margin: 20px 0;
     }
 
     .titulo-sobre {
-        margin-top: 0; 
+        margin-top: 0;
     }
 
     .sobre-txt h4 {
-        font-size: 2rem; 
+        font-size: 2rem;
     }
 
     .sobre-txt-paragrafo {
-        font-size: 1.6rem; 
+        font-size: 1.6rem;
     }
 
     .hebe-content,
     .amon-content {
-        flex-direction: column; 
+        flex-direction: column;
         text-align: center;
         padding: 20px;
         margin: 0;
@@ -1027,12 +1014,12 @@ a.button-dot:hover:before {
 
     .hebe-content .image,
     .amon-content .image {
-        width: 80%; 
-        margin: 20px auto; 
+        width: 80%;
+        margin: 20px auto;
     }
 
     #regras .content-vamos-jogar-img {
-        display: none; 
+        display: none;
     }
 }
 
@@ -1050,13 +1037,14 @@ a.button-dot:hover:before {
     }
 
     .expandable-content {
-        display: none; 
+        display: none;
     }
 
     .expand-button {
         display: block;
     }
 }
+
 /* ===================================
     Background personagens
 ====================================== */
@@ -1076,7 +1064,7 @@ a.button-dot:hover:before {
     background-size: auto;
     color: #fff;
     justify-content: center;
-    margin-top:-160px;
+    margin-top: -160px;
 }
 
 .rule-rules {
@@ -1112,7 +1100,7 @@ a.button-dot:hover:before {
     align-items: center;
     flex-direction: row-reverse;
     color: #fff;
-    background-color: #47ea4e;
+    background-color: #EA5B2F;
     text-align: left;
     padding: 10px 40px;
     cursor: pointer;
@@ -1120,7 +1108,7 @@ a.button-dot:hover:before {
     text-decoration: none;
     transition: all .2s linear;
     margin-bottom: 17px;
-    border: 2px solid #47ea4e;
+    border: 2px solid #EA5B2F;
     border-radius: 50px;
     font-size: 1.0rem;
     letter-spacing: 2px;
@@ -1129,7 +1117,7 @@ a.button-dot:hover:before {
 }
 
 
-.expand-button  {
+.expand-button {
     margin-right: 10px;
 }
 
@@ -1145,40 +1133,55 @@ a.button-dot:hover:before {
 /* CSS base aqui (para telas de tamanho médio ou maiores) */
 
 @media (max-width: 1024px) {
+
     /* Estilos para telas menores que 1024px (tamanho de tablet, por exemplo) */
     .sobre-txt h4 {
-        font-size: 2.5rem; /* Reduz o tamanho da fonte do título em telas menores */
+        font-size: 2.5rem;
+        /* Reduz o tamanho da fonte do título em telas menores */
     }
 
     .sobre-txt-paragrafo {
-        font-size: 1.8rem; /* Reduz o tamanho da fonte dos parágrafos em telas menores */
+        font-size: 1.8rem;
+        /* Reduz o tamanho da fonte dos parágrafos em telas menores */
     }
 
     .rule-rules {
-        max-width: 600px; /* Limita a largura das regras a 600px em telas menores */
+        max-width: 600px;
+        /* Limita a largura das regras a 600px em telas menores */
     }
 
     .content-vamos-jogar-img {
-        max-width: 100%; /* Certifica-se de que a imagem se ajuste à largura da tela */
+        max-width: 100%;
+        /* Certifica-se de que a imagem se ajuste à largura da tela */
     }
 }
 
 @media (max-width: 768px) {
+
     /* Estilos para telas menores que 768px (tamanho de dispositivo móvel) */
-    .content-text, .content-text h2, .content-text p {
-        text-align: center; /* Centraliza o texto em telas menores */
+    .content-text,
+    .content-text h2,
+    .content-text p {
+        text-align: center;
+        /* Centraliza o texto em telas menores */
     }
 
     .image {
-        width: 100%; /* Garante que a imagem se ajuste à largura da tela */
-        margin-left: 0; /* Remove a margem esquerda em telas menores */
-        margin-right: 0; /* Remove a margem direita em telas menores */
+        width: 100%;
+        /* Garante que a imagem se ajuste à largura da tela */
+        margin-left: 0;
+        /* Remove a margem esquerda em telas menores */
+        margin-right: 0;
+        /* Remove a margem direita em telas menores */
     }
 
     .content-text {
-        margin-right: 0; /* Remove a margem direita em telas menores */
-        margin-left: 0; /* Remove a margem esquerda em telas menores */
-        width: 100%; /* Garante que o texto ocupe toda a largura em telas menores */
+        margin-right: 0;
+        /* Remove a margem direita em telas menores */
+        margin-left: 0;
+        /* Remove a margem esquerda em telas menores */
+        width: 100%;
+        /* Garante que o texto ocupe toda a largura em telas menores */
     }
 }
 
@@ -1202,14 +1205,16 @@ a.button-dot:hover:before {
 
 #campanha {
     background-image: linear-gradient(to bottom, #392666, #572C83, #392666);
-    padding: 100px 20px; /* Reduzi o preenchimento nas laterais para telas menores */
+    padding: 100px 20px;
+    /* Reduzi o preenchimento nas laterais para telas menores */
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Reduzi o espaçamento entre os elementos */
+    gap: 20px;
+    /* Reduzi o espaçamento entre os elementos */
 }
 
 .camapanha-title {
-    text-align: center; 
+    text-align: center;
     color: #FFF;
     top: -50px;
 }
@@ -1221,7 +1226,7 @@ a.button-dot:hover:before {
     color: #FFF;
 }
 
-.post p{
+.post p {
     margin: 0 auto;
     padding: 24px;
     /* width: 100%; */
@@ -1231,12 +1236,13 @@ a.button-dot:hover:before {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    flex-wrap: wrap; /* Permite que os elementos se ajustem em várias linhas em telas menores */
+    flex-wrap: wrap;
+    /* Permite que os elementos se ajustem em várias linhas em telas menores */
 }
 
 .card {
     display: flex;
-    gap: 20px; 
+    gap: 20px;
     margin: 0 auto;
 }
 
@@ -1277,17 +1283,17 @@ a.button-dot:hover:before {
     }
 
     .container-noticias {
-        gap: 20px; 
+        gap: 20px;
     }
 
-    .container-noticias > * {
-        margin-bottom: 20px; 
+    .container-noticias>* {
+        margin-bottom: 20px;
     }
 }
 
 @media (max-width: 768px) {
     .title h1 {
-        font-size: 24px; 
+        font-size: 24px;
     }
 
     .card {
@@ -1306,26 +1312,28 @@ a.button-dot:hover:before {
 
 @media (max-width: 480px) {
     #campanha {
-        padding: 50px 10px; 
+        padding: 50px 10px;
     }
 }
 
 .avaliacao {
-    display: flex; 
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
 }
 
 .avaliacao img {
     border-radius: 10px;
-    margin: 5px; 
-    max-width: 100%; 
-    height: auto; 
+    margin: 5px;
+    max-width: 100%;
+    height: auto;
 }
 
 @media (max-width: 768px) {
     .avaliacao {
-        flex-direction: column; /* Empilha as imagens verticalmente em telas estreitas (mobile) */
-        align-items: center; /* Alinha as imagens ao centro verticalmente */
+        flex-direction: column;
+        /* Empilha as imagens verticalmente em telas estreitas (mobile) */
+        align-items: center;
+        /* Alinha as imagens ao centro verticalmente */
     }
 }
 
@@ -1337,7 +1345,7 @@ a.button-dot:hover:before {
 ====================================== */
 
 
-.content-namidia{
+.content-namidia {
     height: auto;
     /* background: linear-gradient(99deg, #ED7949 48.58%, #572C83 97.82%, #DA3514 113.01%), #1D1534; */
     background-image: linear-gradient(to bottom, #392666, #572C83, #392666);
@@ -1356,7 +1364,7 @@ a.button-dot:hover:before {
     /* display: block; */
 }
 
-.content-title-jogo{
+.content-title-jogo {
     color: #FFFFFF;
     text-align: center;
     margin: 0 auto;
@@ -1390,7 +1398,7 @@ a.button-dot:hover:before {
 .expandable-section a:hover {
     border-color: none;
     background-color: #47ea4e;
-    color: #572C83; 
+    color: #572C83;
 }
 
 .title-namidia {
@@ -1402,23 +1410,23 @@ a.button-dot:hover:before {
 }
 
 ul {
-    list-style: none; 
-    padding: 0; 
+    list-style: none;
+    padding: 0;
 }
 
 li {
-    margin: 5px 0; 
+    margin: 5px 0;
     color: #FFFFFF;
     font-size: 1.4rem;
 }
 
 .bullet {
     display: inline-block;
-    width: 8px; 
+    width: 8px;
     height: 8px;
-    background-color: #000; 
-    border-radius: 50%; 
-    margin-right: 5px; 
+    background-color: #000;
+    border-radius: 50%;
+    margin-right: 5px;
 }
 
 .card-container {
@@ -1435,6 +1443,7 @@ li {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
 }
+
 .card:nth-child(2) {
     margin-top: 40px;
 }
